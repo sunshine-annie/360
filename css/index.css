@@ -1,0 +1,128 @@
+body, img{
+    padding: 0;
+    margin: 0;
+}
+
+/*第一屏*/
+.section:nth-child(1) {
+    overflow: hidden;
+}
+.section:nth-child(1) .logo {
+    text-align: center;
+    margin-top: 100px;
+}
+.section:nth-child(1) .text {
+    margin: 20px 0;
+    text-align: center;
+}
+.section:nth-child(1) .info {
+    margin-top: 100px;
+    text-align: center;
+}
+/*第一屏动画*/
+.section:nth-child(1) .text img {
+    margin: 0 30px;
+    transition: all 1s;
+    opacity: 0;
+}
+.section.current:nth-child(1) .text img {
+    margin: 0 8px;
+    opacity: 1;
+}
+
+/*第二屏*/
+.section:nth-child(2) {
+    overflow: hidden;
+}
+.section:nth-child(2) .shields {
+    float: left;
+    width: 408px;
+    height: 482px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.section:nth-child(2) .shields img {
+    float: left;
+    transition: all 2s;
+}
+.section:nth-child(2) .info {
+    float: right;
+    width: 635px;
+    height: 309px;
+    margin-top: 120px;
+    margin-right: 100px;
+}
+/*第二屏动画*/
+.section:nth-child(2) .shields img:nth-child(1) {
+    transform: rotateX(30deg)  translateX(-80px);
+}
+.section:nth-child(2) .shields img:nth-child(2) {
+    transform: rotateX(120deg)  translateY(-80px);
+}
+.section:nth-child(2) .shields img:nth-child(3) {
+    transform: rotateX(300deg)  translateX(120px);
+}
+.section:nth-child(2) .shields img:nth-child(4) {
+    transform: rotateX(-90deg)  translateX(-100px);
+}
+.section:nth-child(2) .shields img:nth-child(5) {
+    transform: rotateX(490deg)  translateY(80px);
+}
+.section:nth-child(2) .shields img:nth-child(6) {
+    transform: rotateX(130deg)  translateX(280px);
+}
+.section:nth-child(2) .shields img:nth-child(7) {
+    transform: rotatex(-30deg)  translateX(-30px);
+}
+.section:nth-child(2) .shields img:nth-child(8) {
+    transform: rotateX(352deg)  translateX(-50px);
+}
+.section:nth-child(2) .shields img:nth-child(9) {
+    transform: rotateX(-340deg)  translateX(210px);
+}
+
+.section.current:nth-child(2) .shields img {
+    transform: rotate(0deg) translate(0px);
+}
+
+/*第三屏*/
+.section:nth-child(3) {
+    overflow: hidden;
+    position: relative;
+}
+.section:nth-child(3) .info {
+    float: left;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.section:nth-child(3) .circle {
+    float: right;
+    margin-top: 120px;
+    margin-right: 50px;
+}
+.section:nth-child(3) .rocket {
+    position: absolute;
+    bottom: -208px;
+    left: 450px;
+    transition: all 2s;
+}
+/*第三屏动画*/
+.section.current:nth-child(3) .rocket {
+    bottom: 180px;
+    left: 890px;
+}
+
+/*第四屏*/
+
+
+/*第四屏动画*/
+
+
+
+
+
+
+
+
+
+
